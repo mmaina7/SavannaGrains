@@ -1,0 +1,132 @@
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ body {
+   background-color:beige;
+   color: #333;
+ }
+
+ header {
+   background-color: hsl(189, 34%, 73%);
+   padding: 20px;
+   text-align: center;
+ }
+
+ .navbar ul {
+   list-style-type: none;
+   display: flex;
+   justify-content: flex-end;
+   gap: 25px;
+ }
+
+ .navbar a {
+   text-decoration: none;
+   color: #f8f6f6;
+   font-weight: bold;
+ }
+    .Hero {
+   text-align: center;
+   padding: 30px;
+   background-color: hsl(189, 34%, 73%);
+
+}
+      .Hero img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        margin-top: 20px;
+      }
+
+    .featured-products h2 {
+        text-align: center;
+        color: hsl(189, 34%, 73%);
+        margin-bottom: 20px;
+
+    }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: space-around;
+
+        }
+        .card {
+            background-color: #f8f6f6;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            width: 300px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .product-pricing {
+            padding: 20px;
+            max-width: fit-content;
+            margin: 40px auto;
+            padding: 20px;      
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f8f6f6;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+        thead {
+            background-color: hsl(189, 34%, 73%);
+            color: #fff;
+        }
+        .contact-info {
+            padding: 25px;
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #f8f6f6;
+            border-radius: 8px;
+            border:1px solid #ddd;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"], 
+        select, 
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button[type="submit"] {
+            background-color: hsl(189, 34%, 73%);
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        footer {
+            background-color: hsl(189, 34%, 73%);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 4dvh;
+        }
