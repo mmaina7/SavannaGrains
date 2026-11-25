@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Savanna Grains</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="Hero">
+                <h1>Savanna Grains</h1>
+                 <h3>Welcome to Savanna Grains! We offer the finest grains and cereals in the region.</h3> 
+                <img src="images/grainsbanner.jpg" alt="Grains" width="100%" height="500">
+            </section>
+
+            <section class="featured-products">
+
+            <h2>Featured Products</h2>
+            <div class="card-container">
+                <article class="card">
+                    <h3>Organic Beans</h3>
+                   <p>Our organic beans are sourced from local farms and are perfect for a healthy diet.</p>
+                   <img src="images/beansone.jpg" alt="Organic Beans" width="300" height="300">
+                </article>
+                <article class="card">
+                    <h3>Mahindi</h3>
+                    <p>Farm-fresh, sun-dried white maize sourced directly from Nanyuki farmers.</p>
+                    <img src="images/whitemaize.jpg" alt="Mahindi" width="300" height="300">
+                </article>
+                <article class="card">
+                    <h3>Millet</h3>
+                    <p>Nutrient-rich, stone-ground millet ideal for healthy porridge and baking.</p>
+                    <img src="images/porridge.jpg" alt="Millet" width="300" height="300">
+                </article>
+                <article class="card">
+                    <h3>Red Sorghum</h3>
+                    <p>Premium sorghum grains, perfect for making nutritious meals and beverages.</p>
+                    <img src="images/sorghum.jpg" alt="Red Sorghum" width="300" height="300">
+                </article>
+            </div>
+     </section>
+
+
+
+     <section class="product-pricing">
+        <h2>Wholesale &amp; Retail Price Guide</h2>
+        <table>
+            <thead>
+>                <tr>
+                    <th>Grain / Cereal</th>
+                    <th>Origin </th>
+                    <th>Price (per kg)</th>
+                    <th>Availability</th>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Organic Beans</td>
+                <td>Laikipia/Nanyuki</td>
+                <td>KSh 180</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td>Mahindi(Maize)</td>
+                <td>Nanyuki</td>
+                <td>KSh 120</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td>Millet</td>
+                <td>Local Farms</td>
+                <td>KSh 100</td>
+                <td>Medium</td>
+            </tr>
+            <tr>
+                <td>Red Sorghum</td>
+                <td>Nanyuki</td>
+                <td>KSh 180</td>
+                <td>Low</td>
+            </tr>
+        </tbody>
+    </table>        
+     </section>   
+        <section class="contact-info">
+            <h2>Place an Order or Inquiry</h2>
+            <form action="submit_order.php" method="post">
+                 <div>
+                    <label for="order-notes">Quantity (kg); Delivery Instructions</label><br>
+                    <textarea id="order-notes" name="order_notes" placeholder="Enter quantity and any delivery instructions" rows="4" 
+                    required></textarea>
+
+                </div>
+
+                <div>
+                    <label for="full-name">Full Name</label><br>
+                    <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" required>
+
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" name="phone_number" placeholder="Enter your phone number" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+             </div>
+             
+
+                <fieldset>
+                    <legend>Customer Type</legend>
+                    <label>
+                     <input type="radio" name="customer_type" value="retail" checked>Retail Buyer
+                    </label>
+                    <label>
+                        <input type="radio" name="customer_type" value="wholesale">Wholesale / Distributor
+                    </label>    
+                </fieldset>
+                  
+
+            <div>
+
+                <label for="product-select">Select Product</label><br>
+                <select id="product-select" name="product">
+                    <option value="organic-beans">Organic Beans</option>
+                    <option value="maize">Mahindi (Maize)</option>
+                    <option value="millet">Millet</option>
+                    <option value="red-sorghum">Red Sorghum</option>
+                </select>
+
+            </div>
+             
+
+
+                <button type="submit">Submit Order</button>
+            </form> 
+        </section>
+ </main>
+                
+<footer>
+            <p> Nanyuki, Kenya</p>
+            <p> &copy; 2024 Savanna Grains. All rights reserved.</p>
+       
+            
+        </footer>
+    </body>
+</html>
